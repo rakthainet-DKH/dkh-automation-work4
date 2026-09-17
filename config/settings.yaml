@@ -1,0 +1,44 @@
+# DKH Automation Work 4 - Configuration Settings
+
+# Application Configuration
+app:
+  name: "DKH Automation"
+  version: "1.0.0"
+  environment: "development"
+  debug: true
+
+# Database Configuration
+database:
+  type: "sqlite"
+  host: "localhost"
+  port: 3306
+  name: "dkh_automation"
+  username: "admin"
+  password: "${DB_PASSWORD}"
+
+# Logging Configuration
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/app.log"
+  max_size: "10MB"
+  backup_count: 5
+
+# Processing Configuration
+processing:
+  batch_size: 100
+  timeout: 300
+  retry_attempts: 3
+  retry_delay: 5
+
+# Analysis Configuration
+analysis:
+  method: "statistical"
+  confidence_level: 0.95
+  min_samples: 30
+
+# Output Configuration
+output:
+  format: "json"
+  directory: "./output"
+  timestamp: true

@@ -1,0 +1,59 @@
+# Java
+target/
+*.jar
+*.war
+*.ear
+*.class
+*.classpath
+.classpath
+.project
+.settings/
+*.iml
+.idea/
+*.log
+
+# Go
+bin/
+obj/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Docker
+docker-compose.override.yml
+.docker/
+
+# Kubernetes
+kubectl.conf
+kubeconfig
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Database
+*.sql
+data/
+db/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+*.swp
+*.swo
+*~
+
+# Node (if needed)
+node_modules/
+npm-debug.log*
+
+# Build artifacts
+build/
+dist/
+.gradle/
